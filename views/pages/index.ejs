@@ -1,0 +1,131 @@
+<!-- views/pages/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+  <body class="slds">
+    <header>
+      <% include ../partials/siteHeader %>
+    </header>
+    <main>
+      <% include ../partials/pageHeader %>
+
+      <!-- Design System Grid Layout (not slds-col) -->
+      <div class="slds-p-around--small slds-m-bottom--large">
+        <h1 class="slds-text-heading--large slds-p-bottom--small">Design System Grid Layout (not slds-col)</h1>
+        <div class="slds-grid">
+          <div class="myBox">Col</div>
+        </div>
+        <div class="slds-grid">
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+        </div>
+        <div class="slds-grid">
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+          <div class="myBox">Col</div>
+        </div>
+      </div>
+
+      <!-- Design System Grid Layout (slds-col) -->
+      <div class="slds-p-around--small slds-m-bottom--large">
+        <h1 class="slds-text-heading--large slds-p-bottom--small">Design System Grid Layout (slds-col)</h1>
+        <div class="slds-grid">
+          <div class="slds-col myBox">Col</div>
+        </div>
+        <div class="slds-grid">
+          <div class="slds-col myBox">Col</div>
+          <div class="slds-col myBox">Col</div>
+        </div>
+        <div class="slds-grid">
+          <div class="slds-col myBox">Col</div>
+          <div class="slds-col myBox">Col</div>
+          <div class="slds-col myBox">Col</div>
+        </div>
+      </div>
+
+      <!-- Design System Grid Layout (slds-col--padded) -->
+      <div class="slds-p-around--small slds-m-bottom--large">
+        <h1 class="slds-text-heading--large slds-p-bottom--small">Design System Grid Layout (slds-col--padded)</h1>
+        <div class="slds-grid slds-grid--pull-padded">
+          <div class="slds-col--padded myBox">Col</div>
+        </div>
+        <div class="slds-grid slds-grid--pull-padded">
+          <div class="slds-col--padded myBox">Col</div>
+          <div class="slds-col--padded myBox">Col</div>
+        </div>
+        <div class="slds-grid slds-grid--pull-padded">
+          <div class="slds-col--padded myBox">Col</div>
+          <div class="slds-col--padded myBox">Col</div>
+          <div class="slds-col--padded myBox">Col</div>
+        </div>
+      </div>
+
+      <!-- Design System Grid Layout (Manual Sizing) -->
+      <div class="slds-p-around--small slds-m-bottom--large">
+        <h1 class="slds-text-heading--large slds-p-bottom--small">Design System Grid Layout (Manual Sizing)</h1>
+        <div class="slds-grid slds-wrap slds-grid--pull-padded">
+          <div class="slds-col--padded slds-size--1-of-1 myBox">1</div>
+          <div class="slds-col--padded slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--8-of-12 myBox">2</div>
+          <div class="slds-col--padded slds-size--1-of-2 slds-medium-size--1-of-6 slds-large-size--4-of-12 myBox">3</div>
+          <div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-3 myBox">4</div>
+          <div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-3 myBox">5</div>
+          <div class="slds-col--padded slds-size--1-of-1 slds-large-size--1-of-3 myBox">
+            <div class="slds-grid slds-wrap slds-grid--pull-padded">
+              <div class="slds-col--padded slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2 myBox">6</div>
+              <div class="slds-col--padded slds-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2 myBox">7</div>
+            </div>
+          </div>
+      　</div>
+      </div>
+
+      <!-- Design System Grid Layout (Manual Sizing - not slds-col ) -->
+      <div class="slds-p-around--small slds-m-bottom--large">
+        <h1 class="slds-text-heading--large slds-p-bottom--small">Design System Grid Layout (Manual Sizing - not slds-col )</h1>
+        <div class="slds-grid slds-wrap slds-grid--pull-padded">
+          <div class="slds-size--1-of-1 myBox">1</div>
+          <div class="slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--8-of-12 myBox">2</div>
+          <div class="slds-size--1-of-2 slds-medium-size--1-of-6 slds-large-size--4-of-12 myBox">3</div>
+          <div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-3 myBox">4</div>
+      　</div>
+      </div>
+
+      <!-- Design System Grid Layout (Horizontal Alignment Center) -->
+      <div class="slds-p-around--small slds-m-bottom--large">
+        <h1 class="slds-text-heading--large slds-p-bottom--small">Design System Grid Layout (Horizontal Alignment Center)</h1>
+        <div class="slds-grid slds-grid--align-center">
+          <div class="myBox">Content determines the width unless otherwise set</div>
+          <div class="myBox">1</div>
+          <div class="myBox">2</div>
+          <div class="myBox">3</div>
+        </div>
+      </div>
+
+      <!-- Design System Grid Layout (Container Frame) -->
+      <div class="slds-p-around--small slds-m-bottom--large">
+        <h1 class="slds-text-heading--large slds-p-bottom--small">Design System Grid Layout (Container Frame)</h1>
+        <div class="slds-grid slds-grid--frame">
+          <div class="slds-col myBox">App Content</div>
+        </div>
+      </div>
+
+    </main>
+</body>
+</html>
